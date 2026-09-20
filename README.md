@@ -1,24 +1,60 @@
-# SaaS-FinTech-Order-Funnel-Analysis-Uncovering-Drop-offs-and-Revenue-Opportunities
-Executive Summary
+# Product Funnel Analysis for SaaS FinTech
 
-Order conversion rates at our SaaS FinTech company remain below expectations. To identify root causes and quantify improvement opportunities, we extracted and analyzed order-status data using SQL, Python, and Power BI, then built a dashboard to monitor progression through the funnel.
-The largest revenue opportunities lie in raising user interaction rates and completed bank-login attempts. We therefore recommend three targeted product and process changes: refined workflow copy, reminder emails/texts, and stronger client engagement. These adjustments are projected to lift conversion and daily revenue while reducing ad-hoc analytics requests.
-Business Problem
+## Executive Summary:
 
-Completed orders drive revenue. Product and sales stakeholders have observed that the conversion rate—from order initiation to completion—is lower than expected. The key questions are: Where are users dropping out of the workflow, and what product or process changes will most effectively encourage completion?
-Methodology
+Order conversion has been low at our SaaS company, and we need to determine the root cause and potential solutions. Using SQL, Python, and Power BI, I pulled order status data from the database and created a dashboard to track orders through the funnel. After identifying that the largest revenue opportunities are to increase user interaction rate and completed login attempts, I recommend that the product team implements a few adjustments that will lead to higher conversion:
 
-SQL queries (CTEs, joins, CASE statements, and aggregations) to extract, clean, and transform order data from the database.
-Power BI dashboard to track order volumes by status, overall and by client.
-Python-based funnel simulation (Pandas, NumPy, Matplotlib) to model the revenue impact of incremental improvements at each stage.
+1. Copy changes within the workflow
+2. Reminder emails/texts
+3. Better client relationships
 
-Skills Demonstrated
 
-SQL: CTEs, joins, CASE logic, aggregate functions
-Power BI: DAX, calculated columns, ETL, data modeling, visualization
-Python: Pandas, NumPy, Matplotlib, custom functions, statistical funnel modeling
+### Business Problem: 
 
-Results & Recommendations
+Completed orders are essential for this SaaS Fintech company since they're directly tied to revenue. Product and sales stakeholders have noticed that the product has a lower conversion rate than expected (based on users who start orders vs. complete the order). How can we determine where users are falling out of the workflow and make product adjustments to encourage users to complete their orders? 
 
-The dashboard provides product and sales teams with self-serve visibility into the order funnel, both company-wide and by client. This has already reduced ad-hoc analytics requests by approximately five hours per week.
-Analysis revealed that nearly 50 % of orders drop off before users even enter the workflow, and fewer than 25 % of users successfully submit correct banking credentials. Python modeling shows that a 1 % increase in user interaction rate would generate roughly $285 in additional daily revenue, while a 1 % increase in completed bank-login attempts would add approximately $405 per day.
+![Screenshot 2024-05-25 at 2 05 24 PM](https://github.com/jessramosdata/Product-Funnel-SaaS-FinTech/assets/59672972/be7317e4-175b-4442-8091-8c4fb99854ac)
+
+
+
+### Methodology: 
+
+1. SQL query that extracts, cleans, and transforms the data from the database.
+   
+2. A dashboard in Power BI that tracks the number of orders in each status.
+
+3. A funnel analysis in Python to simulate changes and determine the best areas of opportunity.
+
+
+### Skills:
+
+SQL: CTEs, Joins, Case, aggregate functions
+
+Power BI: Dax, writing functions, ETL, calculated columns, data visualization, data modeling
+
+Python: Pandas, Matplotlib, Numpy, Writing functions, building a product funnel, statistics
+
+
+### Results & Business Recommendation: 
+
+Creating a dashboard to track product orders gives product and sales stakeholders visibility into the product funnel both overall and for specific clients. Because of democratizing this data, stakeholders are now able to self serve, and the analytics team now has 5 less hours of ad hoc requests per week. This analysis showed us that almost 50% of orders fall out before entering the workflow, and less than 25% of users enter their correct banking credentials to connect their account. According to the model built in Python, increasing user interaction rates by 1% will result in $285 more in daily revenue and increasing completed bank login attempts by 1% will result in $405 more in daily revenue.
+
+![Screenshot 2024-05-25 at 2 04 48 PM](https://github.com/jessramosdata/Product-Funnel-SaaS-FinTech/assets/59672972/d8cbde85-be7e-4c16-a132-02a63e357b1d)
+
+
+Because the biggest revenue impacts will likely come from increasing the user interaction rate & completed login attempts, I recommend a few product adjustments: 
+
+1. Send inactive users reminder emails and texts to encourage them to enter the platform to complete their order.
+2. Work with clients (mortgage lenders) to help coach the users through the process and see the value in doing so.
+3. Add copy at the beginning of the workflow stating that the process only takes 5 min, and feature a progress bar throughout to encourage completion.
+4. Add copy at the bank login page to encourage users to look up their credentials to make sure they're correct to reduce credential errors.
+
+I believe these adjustments will best tackle the largest workflow fallout points, increase conversion & revenue, and save the analytics team hours per week from a decrease in ad hoc requests.
+
+### Next Steps: 
+
+1. AB Test copy within the workflow
+2. Train clients and users
+3. Measure email and text open & click rates
+
+
